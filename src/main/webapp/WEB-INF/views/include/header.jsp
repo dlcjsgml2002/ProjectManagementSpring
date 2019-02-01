@@ -10,6 +10,6 @@
 </head>
 <body>
 	<div class="container">
-		<div class="col-span-12">
-			<h3>SPMS(Simple Project Management System)</h3>
+		<div class="col-span-12" style="height: 100px; background-color: #1EA4FF;  padding-left: 50px;">
+			<h3 style="line-height: 100px;">SPMS(Simple Project Management System)</h3>
 		</div>

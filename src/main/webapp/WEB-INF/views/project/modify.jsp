@@ -2,7 +2,9 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ include file="../include/header.jsp"%>
+<form action="modify" method="post">
 		<fieldset>
+			<input type="hidden" name="serial_number" value="${ProjectVO.serial_number }">
 			<p>
 				<label>프로젝트 이름</label>
 				<input type="text" name="project_name" size="40" value="${ProjectVO.project_name }">
@@ -29,22 +31,9 @@
 				</select>
 			</p>
 			<p>
-				<a id="modify" href="${pageContext.request.contextPath }/project/modify?serial_number=${ProjectVO.serial_number }">[수정]</a>
-				<a id="remove" href="${pageContext.request.contextPath }/project/remove?serial_number=${ProjectVO.serial_number }">[삭제]</a>
-				<a href="${pageContext.request.contextPath }/project/list">[돌아가기]</a>
+				<input type="submit" value="수정">
+				<input type="reset" value="취소">
 			</p>
 		</fieldset>
-		
-	<form action="remove" method="post" id="f1">
-		<input type="hidden" name="serial_number" value="${ProjectVO.serial_number }">
 	</form>
-	
-	<script>
-		$(function(){
-			$("#remove").click(function(e){
-				e.preventDefault();
-				$("#f1").submit();
-			})
-		})
-	</script>
 <%@ include file="../include/footer.jsp"%>

@@ -20,7 +20,6 @@ public class ProjectDAOTest {
 	@Test
 	public void test01Register() {
 		ProjectVO vo = new ProjectVO();
-		vo.setSerial_number(3);
 		vo.setProject_name("프로젝트 제목");
 		vo.setProject_content("프로젝트 내용");
 		vo.setStart_date(new Date());

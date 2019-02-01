@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../include/header.jsp"%>
-<form action="insert" method="post">
+<form action="register" method="post">
 		<fieldset>
 			<p>
 				<label>프로젝트 이름</label>
@@ -13,11 +13,11 @@
 			</p>
 			<p>
 				<label>시작 날짜</label>
-				<input type="text" name="start_date" size="40">
+				<input type="text" name="start_date" size="40" placeholder="2015-12-16">
 			</p>
 			<p>
 				<label>마감 날짜</label>
-				<input type="text" name="end_date" size="40">
+				<input type="text" name="end_date" size="40" placeholder="2015-12-31">
 			</p>
 			<p>
 				<label>상태</label>
@@ -34,4 +34,4 @@
 			</p>
 		</fieldset>
 	</form>
-<%@ include file="../include/header.jsp"%>
+<%@ include file="../include/footer.jsp"%>

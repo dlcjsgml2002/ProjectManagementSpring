@@ -3,8 +3,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ include file="../include/header.jsp"%>
-		<div class="table-responsive">
-			<a href="${pageContext.request.contextPath }/project/insert">[새 프로젝트 등록]</a>
+		<div class="table-responsive">                        
+			<div style="text-align: right;">
+				<a href="${pageContext.request.contextPath }/project/register">[새 프로젝트 등록]</a>
+			</div>
 			<table class="table">
 				<thead>
 					<tr>

@@ -24,12 +24,12 @@ public class ProjectController {
 
 	@RequestMapping(value = "register", method = RequestMethod.GET)
 	public void registerGet(Model model) {
-		logger.info("insert ----- get");
+		logger.info("register ----- get");
 	}
 
-	@RequestMapping(value = "insert", method = RequestMethod.POST)
+	@RequestMapping(value = "register", method = RequestMethod.POST)
 	public String registerPost(ProjectVO vo, Model model) {
-		logger.info("insert ----- post");
+		logger.info("register ----- post");
 		service.register(vo);
 
 		return "redirect:/project/list";
@@ -48,7 +48,7 @@ public class ProjectController {
 		System.out.println(vo);
 		service.modify(vo);
 
-		return "redirect:/board/read?serial_number=" + vo.getSerial_number();
+		return "redirect:/project/read?serial_number=" + vo.getSerial_number();
 	}
 
 	@RequestMapping(value = "remove", method = RequestMethod.POST)
